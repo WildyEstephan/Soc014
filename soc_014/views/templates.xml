@@ -1,0 +1,14 @@
+<odoo>
+    <data>
+        <record model="ir.module.category" id="soc_temas_groups">
+          <field name="name">Soc 014</field>
+          <field name="description">Temas</field>
+          <field name="sequence">2</field>
+        </record>
+
+        <record id="soc_tema_user" model="res.groups">
+         <field name="name">Tema User</field>
+         <field name="category_id" ref="soc_014.soc_temas_groups"/>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,39 @@
+<odoo>
+  <data>
+
+    <record id="tema_kanban_view" model="ir.ui.view">
+     <field name="name">tema_kanban_view</field>
+      <field name="model">soc.tema</field>
+     <field name="arch" type="xml">
+        <kanban>
+            <field name="name"/>
+            <field name="alumno_ids"/>
+            <field name="lleno"/>
+            <field name="cuenta_alumno"/>
+            <templates>
+                <t t-name="kanban-box">
+                    <button name="seleccionar" type="object" string="Seleccionar"/>
+                </t>
+            </templates>
+        </kanban>
+     </field>
+    </record>
+
+      <record id="soc_tema_action" model="ir.actions.act_window">
+          <field name="name">Temas</field>
+          <field name="type">ir.actions.act_window</field>
+          <field name="res_model">soc.tema</field>
+          <field name="view_mode">kanban</field>
+          <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                  <h1 style="font-size:200;">YA NO HAY TEMAS PARA SELECCIONAR</h1>
+              </p>
+            </field>
+      </record>
+
+      <!-- This Menu Item will appear in the Upper bar, That's why It needs NO parent or action -->
+      <!-- This Menu Item must have a parent and an action -->
+      <menuitem id="soc_tema_root" name="Temas" action="soc_tema_action" sequence="0"/>
+
+  </data>
+</odoo>
