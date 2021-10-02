@@ -33,7 +33,9 @@
 
       <!-- This Menu Item will appear in the Upper bar, That's why It needs NO parent or action -->
       <!-- This Menu Item must have a parent and an action -->
-      <menuitem id="soc_tema_root" name="Temas" action="soc_tema_action" sequence="0"/>
+      <!-- This Menu Item will appear in the Upper bar, That's why It needs NO parent or action -->
+      <menuitem id="soc_tema_root" name="Tema" sequence="0"/>
+      <menuitem id="soc_tema_categ" name="Temas" action="soc_tema_action" sequence="0"/>
 
   </data>
 </odoo>
