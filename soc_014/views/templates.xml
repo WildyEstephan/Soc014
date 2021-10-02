@@ -10,5 +10,19 @@
          <field name="name">Tema User</field>
          <field name="category_id" ref="soc_014.soc_temas_groups"/>
         </record>
+
+
+
+        <template id="login_web_banner" inherit_id="web.login" name="Login Web Banner Inherit">
+
+            <xpath expr="//p[@class='alert alert-danger']" position="after">
+            <div class="text-center page-header" style="background-color:#d9d9d9;">
+                 <p style="padding-top:20px;">
+                    Alpha Server
+                 </p>
+             </div>
+        </xpath>
+
+    </template>
     </data>
 </odoo>
