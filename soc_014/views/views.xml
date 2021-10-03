@@ -19,6 +19,21 @@
      </field>
     </record>
 
+      <record id="tema_view_form" model="ir.ui.view">
+          <field name="name">tema_view_form</field>
+          <field name="model">soc.tema</field>
+          <field name="arch" type="xml">
+              <form string="tTema">
+                  <sheet>
+                      <group>
+                          <field name="name"/>
+                          <field name="alumno_ids" groups="base.group_system"/>
+                      </group>
+                  </sheet>
+              </form>
+          </field>
+      </record>
+
       <record id="soc_tema_action" model="ir.actions.act_window">
           <field name="name">Temas</field>
           <field name="type">ir.actions.act_window</field>
