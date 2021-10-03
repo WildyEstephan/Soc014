@@ -1,27 +1,9 @@
 <odoo>
   <data>
 
-    <record id="tema_kanban_view" model="ir.ui.view">
-     <field name="name">tema_kanban_view</field>
-      <field name="model">soc.tema</field>
-     <field name="arch" type="xml">
-        <kanban>
-            <field name="name"/>
-            <field name="alumno_ids"/>
-            <field name="lleno"/>
-            <field name="cuenta_alumno"/>
-            <templates>
-                <t t-name="kanban-box">
-
-                </t>
-            </templates>
-        </kanban>
-     </field>
-    </record>
-
       <record id="tema_kanban_view" model="ir.ui.view">
             <field name="name">res.partner.kanban</field>
-            <field name="model">res.partners</field>
+            <field name="model">soc.tema</field>
             <field name="arch" type="xml">
                 <kanban >
                     <field name="name"/>
