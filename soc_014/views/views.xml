@@ -43,6 +43,7 @@
                     </templates>
                 </kanban>
             </field>
+      </record>
 
       <record id="tema_view_form" model="ir.ui.view">
           <field name="name">tema_view_form</field>
