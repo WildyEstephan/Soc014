@@ -36,7 +36,7 @@ class Tema(models.Model):
     def seleccionar(self):
 
         if self.env.user.selecciono:
-            raise exceptions.UserErro(("No puedes seleccionar mas de un tema"))
+            raise exceptions.UserError(("No puedes seleccionar mas de un tema"))
 
         alumnos = []
 
