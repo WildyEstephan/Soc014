@@ -35,6 +35,9 @@ class Tema(models.Model):
 
     def seleccionar(self):
 
+        if self.env.user.selecciono:
+            raise exceptions.UserErro(("No puedes seleccionar mas de un tema"))
+
         alumnos = []
 
         if self.alumno_ids:
@@ -45,6 +48,16 @@ class Tema(models.Model):
         else:
             alumnos.append([4, self.env.user.id])
 
+        self.env.user.selecciono = True
+
         self.alumno_ids = alumnos
+
+class ResUsers(models.Model):
+    _inherit = 'res.users'
+
+    selecciono = fields.Boolean(
+        string='Selecciono',
+        required=False)
+
 
 
