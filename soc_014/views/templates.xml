@@ -16,7 +16,7 @@
         <template id="login_web_banner" inherit_id="web.login" name="Login Web Banner Inherit">
 
             <xpath expr="//p[@class='alert alert-danger']" position="after">
-            <div class="text-center page-header" style="background-color:blue;text-color:white;">
+            <div class="text-center page-header" style="background-color:#d9d9d9;">
                  <p style="padding-top:20px;">
                      Cuando entres veras los temas que aun no se han completado las parejas. Una vez que se llena se oculta.<br/>
                      Cuando todos hayan selecionado tema te enviaremos el contacto de tu pareja de trabajo.
