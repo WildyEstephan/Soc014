@@ -46,7 +46,7 @@
           <field name="name">Temas</field>
           <field name="type">ir.actions.act_window</field>
           <field name="res_model">soc.tema</field>
-          <field name="view_mode">kanban,tree,form</field>
+          <field name="view_mode">kanban</field>
           <field name="domain">[('cuenta_alumno', '&#60;', 2)]</field>
           <field name="help" type="html">
               <p class="oe_view_nocontent_create">
