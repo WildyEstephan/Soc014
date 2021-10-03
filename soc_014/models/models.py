@@ -48,7 +48,7 @@ class Tema(models.Model):
         else:
             alumnos.append([4, self.env.user.id])
 
-        self.env.user.selecciono = True
+        self.env.sudo().user.selecciono = True
 
         self.alumno_ids = alumnos
 
