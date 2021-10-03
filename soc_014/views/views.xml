@@ -47,6 +47,7 @@
           <field name="type">ir.actions.act_window</field>
           <field name="res_model">soc.tema</field>
           <field name="view_mode">kanban,tree,form</field>
+          <field name="domain">[('cuenta_alumno', '&#60;', 2)]</field>
           <field name="help" type="html">
               <p class="oe_view_nocontent_create">
                   <h1 style="font-size:200;">YA NO HAY TEMAS PARA SELECCIONAR</h1>
@@ -54,10 +55,18 @@
             </field>
       </record>
 
+      <record id="soc_tema_all_action" model="ir.actions.act_window">
+          <field name="name">Temas</field>
+          <field name="type">ir.actions.act_window</field>
+          <field name="res_model">soc.tema</field>
+          <field name="view_mode">kanban,tree,form</field>
+      </record>
+
       <!-- This Menu Item will appear in the Upper bar, That's why It needs NO parent or action -->
       <!-- This Menu Item must have a parent and an action -->
       <!-- This Menu Item will appear in the Upper bar, That's why It needs NO parent or action -->
       <menuitem id="soc_tema_categ" name="Temas" action="soc_tema_action" sequence="0"/>
+      <menuitem id="soc_tema_categ" name="Temas" action="soc_tema_all_action" sequence="0" groups="base.group_system"/>
 
   </data>
 </odoo>
