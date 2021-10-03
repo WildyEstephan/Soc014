@@ -18,7 +18,7 @@
                                     <field name="name"/>
                                 </div>
                                 <div class="oe_kanban_details">
-                                    <button name="seleccionar" icon="fas fa-plus" type="object" string="Seleccionar"/>
+                                    <button name="seleccionar" icon="Seleccionar" type="object" string="Seleccionar"/>
                                 </div>
                             </div>
                         </t>
